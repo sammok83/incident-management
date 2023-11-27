@@ -41,7 +41,7 @@ class ProcessorService extends cds.ApplicationService {
                     })
             }).where({ ID: req.data.ID });
         if (oData.status_code === 'C') {
-            return req.reject(`Can't modify a closed incident`);
+            // return req.reject(`Can't modify a closed incident`);
         }
     }
 }
